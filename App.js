@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { style } from 'style.js';
 
 // Component reusable (reutilizável)
-import { Button } from './components/Button.js';
+import { Button } from './components/atomic/Button.js';
 
 export default function App() {
   return (
