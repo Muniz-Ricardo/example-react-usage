@@ -1,20 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { style } from 'style.js';
+
+// Component reusable (reutilizável)
+import { Button } from './components/Button.js';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={style.container}>
+      <Button
+        onPress={() => {
+          // press event
+        }}
+        onLongPress={() => {
+          // long press event
+        }}
+        title="Button"
+        iconLeft={}
+        iconRight={}
+        style={styles.customButton}
+        textStyle={styles.customButtonText}
+      />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
